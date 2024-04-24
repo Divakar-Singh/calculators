@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friendship Calculator - Calculator Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="friendship_calculator.css"> <!-- Link to Friendship Calculator specific CSS -->
+</head>
+<body>
+  <header>
+    <h1>Friendship Calculator</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="emi_calculator.html">EMI Calculator</a></li>
+        <li><a href="bmi_calculator.html">BMI Calculator</a></li>
+        <li><a href="calorie_calculator.html">Calorie Intake Calculator</a></li>
+        <li><a href="length_converter.html">Length Converter </a></li>
+        <li><a href="age_calculator.html">Age Calculator </a></li>
+        <li><a href="love_calculator.html">Love Calculator </a></li>
+        <li><a href="friendship_calculator.html"> Friendship Calculator </a></li>
+        <li><a href="calculator.html"> Calculator </a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="calculator-container"> <!-- Add calculator-container class -->
+      <h2>Calculate Your Friendship</h2>
+      <div class="input-container">
+        <label for="name1">Name 1:</label>
+        <input type="text" id="name1" required>
+      </div>
+      <div class="input-container">
+        <label for="name2">Name 2:</label>
+        <input type="text" id="name2" required>
+      </div>
+      <button onclick="calculateFriendship()">Calculate Friendship</button>
+      <div id="friendship-result"></div>
+      <p>This is only just for fun and nothing can calculate your Friendship.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Calculator Website. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

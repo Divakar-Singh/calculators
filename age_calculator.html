@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age Calculator - Calculator Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="age_calculator_styles.css"> <!-- Link to Age Calculator specific CSS -->
+</head>
+<body>
+  <header>
+    <h1>Age Calculator</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="emi_calculator.html">EMI Calculator</a></li>
+        <li><a href="bmi_calculator.html">BMI Calculator</a></li>
+        <li><a href="calorie_calculator.html">Calorie Intake Calculator</a></li>
+        <li><a href="length_converter.html">Length Converter </a></li>
+        <li><a href="age_calculator.html">Age Calculator </a></li>
+        <li><a href="love_calculator.html">Love Calculator </a></li>
+        <li><a href="friendship_calculator.html"> Friendship Calculator </a></li>
+        <li><a href="calculator.html"> Calculator </a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="calculator-container">
+      <h2>Calculate Your Age</h2>
+      <div class="input-container">
+        <label for="birthdate">Birthdate:</label>
+        <input type="date" id="birthdate" required>
+      </div>
+      <div class="input-container">
+        <label for="future-date">Future Date (Optional):</label>
+        <input type="date" id="future-date">
+      </div>
+      <button onclick="calculateAge()">Calculate Age</button>
+      <div class="result-container">
+        <div id="result"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Calculator Website. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

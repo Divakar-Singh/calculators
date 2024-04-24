@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Length Converter - Calculator Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="length_converter_styles.css"> <!-- Link to Length Converter specific CSS -->
+</head>
+<body>
+  <header>
+    <h1>Length Converter</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="emi_calculator.html">EMI Calculator</a></li>
+        <li><a href="bmi_calculator.html">BMI Calculator</a></li>
+        <li><a href="calorie_calculator.html">Calorie Intake Calculator</a></li>
+        <li><a href="length_converter.html">Length Converter </a></li>
+        <li><a href="age_calculator.html">Age Calculator </a></li>
+        <li><a href="love_calculator.html">Love Calculator </a></li>
+        <li><a href="friendship_calculator.html"> Friendship Calculator </a></li>
+        <li><a href="calculator.html"> Calculator </a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="calculator-container">
+      <h2>Convert Length</h2>
+      <div class="input-container">
+        <label for="length">Length:</label>
+        <input type="number" id="length" step="0.01" required>
+      </div>
+      <div class="input-container">
+        <label for="from-unit">From Unit:</label>
+        <select id="from-unit" required>
+          <option value="m">Meter (m)</option>
+          <option value="ft">Foot (ft)</option>
+          <option value="in">Inch (in)</option>
+          <option value="cm">Centimeter (cm)</option>
+          <!-- Add more unit options as needed -->
+        </select>
+      </div>
+      <div class="input-container">
+        <label for="to-unit">To Unit:</label>
+        <select id="to-unit" required>
+          <option value="m">Meter (m)</option>
+          <option value="ft">Foot (ft)</option>
+          <option value="in">Inch (in)</option>
+          <option value="cm">Centimeter (cm)</option>
+          <!-- Add more unit options as needed -->
+        </select>
+      </div>
+      <button onclick="convertLength()">Convert</button>
+      <div class="result-container">
+        <div id="result"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Calculator Website. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
