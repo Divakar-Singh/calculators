@@ -326,3 +326,40 @@ function calculateInverse() {
 // Calculator end here
 
 
+
+// Password Generator start here
+
+function generatePassword() {
+  var length = parseInt(document.getElementById("length").value);
+  var includeLowercase = document.getElementById("lowercase").checked;
+  var includeUppercase = document.getElementById("uppercase").checked;
+  var includeNumbers = document.getElementById("numbers").checked;
+  var includeSymbols = document.getElementById("symbols").checked;
+
+  var charset = '';
+  var lowercaseChars = 'abcdefghijklmnopqrstuvwxyz';
+  var uppercaseChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  var numberChars = '0123456789';
+  var symbolChars = '!@#$%^&*()_+{}[]|;:\',./?';
+
+  if (includeLowercase) charset += lowercaseChars;
+  if (includeUppercase) charset += uppercaseChars;
+  if (includeNumbers) charset += numberChars;
+  if (includeSymbols) charset += symbolChars;
+
+  if (charset.length === 0) {
+      console.error('At least one character type must be included in the password.');
+      return;
+  }
+
+  var password = '';
+  for (var i = 0; i < length; i++) {
+      var randomIndex = Math.floor(Math.random() * charset.length);
+      password += charset[randomIndex];
+  }
+
+  document.getElementById("password").textContent = password;
+
+
+}
+// Password Generator end here
