@@ -363,3 +363,44 @@ function generatePassword() {
 
 }
 // Password Generator end here
+
+
+// Inches to Pixel Calculator
+
+function convertToPixels() {
+    // Get input value in inches
+    let inches = parseFloat(document.getElementById('inches').value);
+    
+    // Check if input is a valid number
+    if (!isNaN(inches)) {
+        // Convert inches to pixels using the conversion factor
+        let pixels = inches * 96;
+        
+        // Display the result
+        document.getElementById('result').innerText = inches + ' inch = ' + pixels + ' pixels';
+    } else {
+        // If input is not a valid number, show an error message
+        document.getElementById('result').innerText = 'Please enter a valid number';
+    }
+}
+
+function convertToInches() {
+    // Get input value in pixels
+    let pixels = parseFloat(document.getElementById('pixels').value);
+    
+    // Check if input is a valid number
+    if (!isNaN(pixels)) {
+        // Convert pixels to inches using the conversion factor
+        let inches = pixels / 96;
+        
+        // Display the result
+        document.getElementById('resultPixels').innerText = pixels + ' pixels = ' + inches.toFixed(2) + ' inches';
+    } else {
+        // If input is not a valid number, show an error message
+        document.getElementById('resultPixels').innerText = 'Please enter a valid number';
+    }
+}
+
+
+// Inches to pixel calculator ends here
+
